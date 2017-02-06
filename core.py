@@ -12,7 +12,7 @@ CLASS_REGEX = {
     'group': [1]
 }
 FUNCTION_REGEX = {
-    'regex': r'(function\s+([^\s\(\)\[\]\{\}+*/&\|=<>,:;~-]+).+{$)|(def\s([^\s\(\)\[\]\{\}+*/&\|=<>,:;~-]+).+:$)',
+    'regex': r'\s*def\s*([^\s\(]+).*$',
     'group': [2, 4]
 }
 VAR_REGEX = {
